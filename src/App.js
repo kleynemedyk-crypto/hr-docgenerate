@@ -309,7 +309,7 @@ function TemplatesView({ templates, setTemplates, onGenerate, userRole }) {
                 </select>
               </div>
               <div>
-                <label style={{ fontSize: 12, fontWeight: 600, color: '#374151', display: 'block', marginBottom: 6 }}>Champs dynamiques {{variable}} </label>
+                <label style={{ fontSize: 12, fontWeight: 600, color: '#374151', display: 'block', marginBottom: 6 }}>Champs dynamiques (ex: nom, poste, salaire)</label>
                 <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                   <input value={fieldInput} onChange={e => setFieldInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && addField()} placeholder="Ex: nom, poste, salaire…" style={{ ...S.input, flex: 1 }} />
                   <button onClick={addField} style={S.btn('#1a6b4a')}>+</button>
